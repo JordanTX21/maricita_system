@@ -1,6 +1,6 @@
-# Capacitacion Base en Python
+# Proyecto Maricita System en Python
 
-Proyecto capacitacion listo para subir a GitHub.
+Proyecto Maricita System listo para subir a GitHub.
 
 ## Requisitos
 
