@@ -22,16 +22,28 @@ pip install -r requirements.txt
 
 ## Ejecutar
 
-1️⃣ Ejecutar GUI:
+📱 Ejecutar GUI:
 
 ```
 python main.py gui
 ```
 
-2️⃣ Ejecutar consola:
+🧑‍💻 Ejecutar consola:
 
 ```
 python main.py
+```
+
+👾 Ejecutar la API
+
+```
+uvicorn api.main:app --reload
+```
+
+📜 Documentación
+
+```
+http://127.0.0.1:8000/docs
 ```
 
 ## Credenciales
