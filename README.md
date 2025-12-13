@@ -12,7 +12,7 @@ Proyecto Maricita System listo para subir a GitHub.
 1️⃣ Activar entorno virtual
 ```
 python -m venv venv
-.venv\Scripts\activate
+venv\Scripts\activate
 ```
 
 2️⃣ Instalar dependencias
