@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 ## Pasos en anaconda
 
-1️⃣ 
+1️⃣ Activar entorno y dependencia
 
 ```bash
 conda env create -f environment.yml
