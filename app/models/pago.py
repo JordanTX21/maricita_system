@@ -3,7 +3,7 @@ from typing import Optional
 
 @dataclass
 class Pago:
-    id: str
+    pedido_id: str
     metodo: str  # 'tarjeta', 'efectivo', 'transferencia'
     monto: float
     confirmado: bool = False

@@ -1,10 +1,14 @@
 import tkinter as tk
 from tkinter import ttk, simpledialog, messagebox
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from gui.main_gui import App
 
 class ClientesView(tk.Frame):
-    def __init__(self, app):
-        super().__init__(app.content)
-        self.app = app
+    def __init__(self, app: "App"):
+        super().__init__(app.root)
+        self.app: "App" = app
         self.system = app.system
 
         tk.Label(self, text="Clientes", font=("Arial", 18, "bold")).pack(pady=10)
@@ -25,11 +29,13 @@ class ClientesView(tk.Frame):
             command=self.registrar_cliente
         ).pack(pady=10)
 
+        tk.Button(self, text="Regresar", command=self.app.show_menu).pack(pady=5)
+
         self.cargar_clientes()
 
     def cargar_clientes(self):
         self.tree.delete(*self.tree.get_children())
-        for c in self.system.clientes.values():
+        for c in self.system.listar_clientes():
             self.tree.insert(
                 "",
                 "end",
