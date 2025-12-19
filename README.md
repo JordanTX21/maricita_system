@@ -7,43 +7,33 @@ Proyecto Maricita System listo para subir a GitHub.
 - VS Code: https://code.visualstudio.com/
 - Python: https://www.python.org/downloads/
 
-## Pasos
+## Pasos en vs code
 
 1️⃣ Activar entorno virtual
-```
+```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
 2️⃣ Instalar dependencias
-```
+```bash
 pip install -r requirements.txt
+```
+
+## Pasos en anaconda
+
+1️⃣ 
+
+```bash
+conda env create -f environment.yml
 ```
 
 ## Ejecutar
 
 📱 Ejecutar GUI:
 
-```
-python main.py gui
-```
-
-🧑‍💻 Ejecutar consola:
-
-```
+```bash
 python main.py
-```
-
-👾 Ejecutar la API
-
-```
-uvicorn api.main:app --reload
-```
-
-📜 Documentación
-
-```
-http://127.0.0.1:8000/docs
 ```
 
 ## Credenciales

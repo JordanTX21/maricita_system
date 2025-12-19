@@ -1,0 +1,21 @@
+name: maricita
+channels:
+  - conda-forge
+dependencies:
+  # Lenguaje
+  - python=3.10
+
+  # Análisis de datos y reportes
+  - pandas=2.1
+  - numpy=1.26
+  - matplotlib=3.8
+  - openpyxl=3.1
+
+  # Jupyter (para notebooks del curso)
+  - jupyter
+  - ipykernel
+
+  # Pip (para librerías no disponibles en conda)
+  - pip
+  - pip:
+      - bcrypt==4.1.2
